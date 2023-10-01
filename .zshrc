@@ -9,7 +9,7 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 alias bare='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-
+alias hr='Hyprland'
 #History
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=1000

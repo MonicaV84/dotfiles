@@ -1,7 +1,7 @@
 {
     "layer": "top", 
     "position": "top", 
-    //"height": 30, 
+   
     
     "spacing": 4, 
     "modules-left": [
@@ -10,13 +10,14 @@
     ],
     "modules-center": [],
     "modules-right": [
-        "custom/pacman",
-        "tray",
+        "custom/notification",
         "pulseaudio",
+        "tray",
         "network",
         "cpu",
         "memory",
         "temperature",
+        "custom/pacman",
         "clock"
     ],
     
@@ -39,14 +40,14 @@
             "urgent": "",
             "active": "",
             "default": ""
+        },
+        "persistent-workspaces": {
+            "*": 5
         }
     },
     
    
-    "tray": {
-        
-        "spacing": 10
-    },
+    
     "clock": {
         
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -103,6 +104,27 @@
         }
         
         
+    },
+    "tray":{
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "custom/pacman": {
+        "format": "{icon}{}",
+        "return-type": "json",
+        "format-icons": {
+          "pending-updates": " ",
+          "updated": ""
+        },
+        "exec-if": "which waybar-updates",
+        "exec": "waybar-updates"
+      },
+    "custom/notification": {
+        "format": "",
+        "on-click": "~/.config/swaync/scripts/tray_waybar.sh",
+        "tooltip": false
+       
+
     }
    
 }

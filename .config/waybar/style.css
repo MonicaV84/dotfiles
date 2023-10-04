@@ -65,7 +65,7 @@ button:hover {
 #workspaces button.active {
     background-color: #f0c6c6;
     color:#363a4f;
-    padding: 0 20px 0 20px;
+    padding: 0 15px 0 15px;
     transition: all 0.3s ease-in-out;
 
 }
@@ -222,18 +222,23 @@ label:focus {
 }
 
 #tray {
-    background-color: #7dc4e4;
-    color: #fff0f5;
+    background-color: #363a4f;
+    color: #282828;
+    font-family: HackNerdFont;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
 }
-
 #tray > .passive {
     -gtk-icon-effect: dim;
+    background-color: #000000;
 }
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #f4dbd6;
+    background-color: #eb4d4b;
 }
+
 
 /* #custom-audio_idle_inhibitor{
     background-color: #24273a;
@@ -292,4 +297,28 @@ label:focus {
 
 #scratchpad.empty {
 	background-color: transparent;
+}
+#custom-pacman {
+    background-color: #91d7e3;
+    padding: 0 10px 0 10px;
+}
+@keyframes blink-update {
+	to {
+		background-color: #ee99a0;
+	}
+}
+
+#custom-pacman {
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#custom-pacman.pending-updates {
+	animation-name: blink-update;
+	animation-duration: 3s;
+}
+#custom-notification {
+    background-color: #eed49f;
+    color: #181926;
+    padding: 0 10px 0 10px;
 }

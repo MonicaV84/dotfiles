@@ -1,6 +1,7 @@
 {
     "layer": "top", 
     "position": "top", 
+    "hight": 11,
    
     
     "spacing": 4, 
@@ -42,7 +43,7 @@
             "default": ""
         },
         "persistent-workspaces": {
-            "*": 5
+            "*": 3
         }
     },
     
@@ -112,7 +113,7 @@
     },
 
     "tray":{
-        "icon-size": 21,
+        "icon-size": 20,
         "spacing": 10
     },
     "custom/pacman": {

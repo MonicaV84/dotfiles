@@ -101,6 +101,16 @@
         
         
     },
+    "hyprland/window": {
+        "format": "{title}",
+        "max-length": 30,
+        "rewrite": {
+           "(.*) - Mozilla Firefox": "🌎 $1",
+           "(.*) - vim": " $1",
+           "(.*) - zsh": " [$1]"
+        }
+    },
+
     "tray":{
         "icon-size": 21,
         "spacing": 10

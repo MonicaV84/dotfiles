@@ -37,6 +37,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
 
+# Zsh autosuggestions history
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 # Neofetch
 neofetch
 

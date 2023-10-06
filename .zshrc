@@ -2,6 +2,7 @@
 alias ls='lsd --group-directories-first'
 alias la='lsd -a --group-directories-first'
 alias lsa='lsd -la --group-directories-first'
+
 alias cat='bat'
 alias chth='kitty +kitten themes'
 alias gs='git status'
@@ -11,25 +12,13 @@ alias gp='git push'
 alias bare='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias hr='Hyprland'
 alias reload='source .zshrc'
+
 # Navigation
-up () {
-  local d=""
-  local limit="$1"
-
-  # Default to limit of 1
-  if [ -z "$limit" ] || [ "$limit" -le 0 ]; then
-    limit=1
-  fi
-
-  for ((i=1;i<=limit;i++)); do
-    d="../$d"
-  done
-
-  # perform cd. Show error if cd fails
-  if ! cd "$d"; then
-    echo "Couldn't go up $limit dirs.";
-  fi
-}
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
 
 #History
 export HISTFILE=~/.zsh_history

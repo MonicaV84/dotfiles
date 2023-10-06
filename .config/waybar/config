@@ -128,7 +128,8 @@
       },
     "custom/notification": {
         "format": "",
-        "on-click": "~/.config/swaync/scripts/tray_waybar.sh",
+        "on-click": "~/.config/swaync/scripts/notifyme.sh",
+        "on-click-right": "~/.config/swaync/scripts/clear.sh",
         "tooltip": false
        
 

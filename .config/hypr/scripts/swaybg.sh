@@ -1,2 +1,2 @@
 #!/bin/bash
-swaybg -i ~/wallpapers/aesthetic-wallpapers/images/4k-ai-mountain.jpg
+swaybg -i ~/wallpapers/aesthetic-wallpapers/images/astronaut.jpg

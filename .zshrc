@@ -20,16 +20,20 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
+
+# Helix
+HELIX_RUNTIME=/.local/share/lib/helix/runtime
+
 #History
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=1000
 export HISTSIZE=1000
-setopt HIST_FIND_NO_DUPS
 
 
 # Path
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 
 # Plugins

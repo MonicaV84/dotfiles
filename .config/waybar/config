@@ -122,6 +122,7 @@
         "format-icons": {
           "pending-updates": " ",
           "updated": ""
+          
         },
         "exec-if": "which waybar-updates",
         "exec": "waybar-updates"

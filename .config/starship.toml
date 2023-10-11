@@ -2,7 +2,7 @@
 
 
 # Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
+#"$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
 add_newline = false
@@ -19,3 +19,8 @@ success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set
 [package]
 disabled = true
 
+# Hide nodes
+[nodejs]
+disabled = true
+[python]
+disabled = true

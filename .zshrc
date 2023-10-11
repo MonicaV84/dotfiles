@@ -1,4 +1,5 @@
 # Aliases
+
 alias ls='lsd --group-directories-first'
 alias la='lsd -a --group-directories-first'
 alias lsa='lsd -la --group-directories-first'

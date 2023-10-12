@@ -21,6 +21,7 @@ alias ga='git add'
 alias gc='git commit -m'                                          
 alias gp='git push'                                               
 alias bare='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME/dotfiles/ --work-tree=$HOME'
+alias rn='ranger'
 
 # Navigation
 alias ..='cd ..'

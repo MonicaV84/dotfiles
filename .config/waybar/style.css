@@ -12,7 +12,7 @@
 window#waybar {
     background-color: transparent;
     border:none;
-    color: #ffffff;
+    color: #f7768e;
     
 }
 
@@ -57,7 +57,7 @@ button:hover {
 
 #workspaces button {
     background-color: transparent;
-    color: #fff;
+    color: #ad8ee6;
    
 }
 
@@ -67,14 +67,14 @@ button:hover {
 
 #workspaces button.active {
     background-color: #24273a;
-    color:#fff;
+    color: #e0af68;
 
     
 
 }
 #workspaces button.default {
     background-color: transparent;
-    color: #fff;
+    color: #ad8ee6;
 }
 
 #workspaces button.urgent {
@@ -130,7 +130,7 @@ button:hover {
 }
 #clock {
     background-color: transparent;
-    color: #fff;
+    color: #7AA2F7;
 }
 
 #battery {
@@ -166,12 +166,12 @@ label:focus {
 
 #cpu {
     background-color: #24273a;
-    color: #fff;
+    color: #f77698;
 }
 
 #memory {
     background-color: #24273a;
-    color: #fff;
+    color: #e0af68;
 }
 
 #disk {
@@ -195,7 +195,7 @@ label:focus {
 
 #pulseaudio {
     background-color: #24273a;
-    color: #fff;
+    color: #9ece6a;
 }
 
 
@@ -223,7 +223,7 @@ label:focus {
 
 #temperature {
     background-color: #24273a;
-    color: #fff;
+    color: #ad8ee6;
 }
 
 #temperature.critical {
@@ -294,14 +294,13 @@ label:focus {
 	background-color: transparent;
 }
 #custom-pacman {
-    background-color: #24273a;
+    background-color: transparent;
     padding: 0 10px 0 10px;
-    color: #fff;
+    color: #a9b1d6;
 }
 @keyframes blink-update {
 	to {
-        background-color: #fff;
-        color: #24273a;
+                color: #e6204b;
 	}
 }
 
@@ -315,8 +314,7 @@ label:focus {
 	animation-duration: 3s;
 }
 #custom-notification {
-    background-color: #24273a;
-    color: #fff;
+        color: #7AA2F7;
     padding: 0 10px 0 10px;
 
 }

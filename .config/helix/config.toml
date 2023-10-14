@@ -1,4 +1,4 @@
-theme = "sonokai_atlantis"
+theme = "tokyonight_storm"
 
 [editor]
 line-number = "relative"

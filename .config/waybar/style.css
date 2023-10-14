@@ -3,6 +3,9 @@
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 11px;
     background-color: #24273a;
+    min-height: 0;
+    border-radius: 20px;
+    opacity: 0.95;
     
 }
 
@@ -53,11 +56,9 @@ button:hover {
 }
 
 #workspaces button {
-    background-color: rgba(24, 25, 38, 0.6);
-    color: #f0c6c6;
-    margin-right: 4px;
-    border-radius: 0;
-    
+    background-color: transparent;
+    color: #fff;
+   
 }
 
 #workspaces button:hover {
@@ -65,14 +66,14 @@ button:hover {
 }
 
 #workspaces button.active {
-    border-bottom: solid 1.5px red;
     background-color: #24273a;
-    color:#f0c6c6;
+    color:#fff;
+
     
 
 }
 #workspaces button.default {
-    background-color: #5b6078;
+    background-color: transparent;
     color: #fff;
 }
 
@@ -107,13 +108,9 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
     font-family: HackNerdFont;
     font-size: 11px;
     background-color: #24273a;
-    border-color: transparent;
-    padding: 0 2px 0 2px;
-    border-radius: 2px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -128,15 +125,12 @@ button:hover {
 }
 
 .modules-right {
-    background-color: #24273a;
-    border-color: transparent;
-    border-radius: 2px;
+    background-color: transparent;
 
 }
 #clock {
-    background-color: #24273a;
+    background-color: transparent;
     color: #fff;
-    border-bottom: solid 1.5px #00b093;
 }
 
 #battery {
@@ -173,13 +167,11 @@ label:focus {
 #cpu {
     background-color: #24273a;
     color: #fff;
-    border-bottom: solid 1.5px #26A65B;
 }
 
 #memory {
     background-color: #24273a;
     color: #fff;
-    border-bottom: solid 1.5px #eb4d4b;
 }
 
 #disk {
@@ -194,7 +186,6 @@ label:focus {
 #network {
     background-color: #24273a;
     color: #fff;
-    border-bottom: solid 1.5px #ee99a0;
 }
 
 #network.disconnected {
@@ -205,7 +196,6 @@ label:focus {
 #pulseaudio {
     background-color: #24273a;
     color: #fff;
-    border-bottom: solid 1.5px red;
 }
 
 
@@ -221,7 +211,6 @@ label:focus {
 #custom-media {
     background-color: #66cc99;
     color: #2a5c45;
-    min-width: 100px;
 }
 
 #custom-media.custom-spotify {
@@ -235,16 +224,16 @@ label:focus {
 #temperature {
     background-color: #24273a;
     color: #fff;
-    border-bottom: solid 1.5px blue;
 }
 
 #temperature.critical {
     background-color: #eb4d4b;
+    border-radius: 0;
 }
 
 #tray {
-    background-color: #24273a;
-    border-bottom: solid 1.5px #eb3fb7;
+    background-color: transparent;
+    color: #fff;
 }
 
 
@@ -259,20 +248,20 @@ label:focus {
 }
 
 #mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
+    background-color: transparent;
+    color: #fff;
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
+    background-color: transparent;
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
+    background-color: transparent;
 }
 
 #mpd.paused {
-    background-color: #51a37a;
+    background-color: transparent;
 }
 
 #language {
@@ -280,7 +269,6 @@ label:focus {
     color: #740864;
     padding: 0 5px;
     margin: 0 5px;
-    min-width: 16px;
 }
 
 #keyboard-state {
@@ -288,7 +276,6 @@ label:focus {
     color: #000000;
     padding: 0 0px;
     margin: 0 5px;
-    min-width: 16px;
 }
 
 #keyboard-state > label {
@@ -308,13 +295,11 @@ label:focus {
 }
 #custom-pacman {
     background-color: #24273a;
-    border-bottom: solid 1.5px #91d7e3;
     padding: 0 10px 0 10px;
     color: #fff;
 }
 @keyframes blink-update {
 	to {
-		border-bottom: solid 1.5px #ee99a0;
         background-color: #fff;
         color: #24273a;
 	}
@@ -331,7 +316,6 @@ label:focus {
 }
 #custom-notification {
     background-color: #24273a;
-    border-bottom: solid 1.5px #20c08b;
     color: #fff;
     padding: 0 10px 0 10px;
 

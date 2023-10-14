@@ -1,10 +1,8 @@
 {
     "layer": "top", 
     "position": "top", 
-    "hight": 11,
-   
-    
     "spacing": 4, 
+    "width": 1350,
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
@@ -14,7 +12,6 @@
         "custom/notification",
         "pulseaudio",
         "tray",
-        "network",
         "cpu",
         "memory",
         "temperature",
@@ -38,13 +35,10 @@
             "8": "8",
             "9": "9",
             "0": "0",
-            "urgent": "",
-            "active": "",
-            "default": ""
+            "urgent": "",
+            "active": "󰊠",
+            "default": ""
         },
-        "persistent-workspaces": {
-            "*": 3
-        }
     },
     
 "mpd": {
@@ -93,15 +87,6 @@
         "format": "{temperatureC}°C "
     },
     
-    "network": {
-        
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
     "pulseaudio": {
         
         "format": "{volume}% {icon} {format_source}",
@@ -140,7 +125,7 @@
     },
 
     "tray":{
-        "icon-size": 20,
+        "icon-size": 15,
         "spacing": 10
     },
     "custom/pacman": {

@@ -250,6 +250,7 @@ label:focus {
 #mpd {
     background-color: transparent;
     color: #fff;
+    font-family: HackNerdFont;
 }
 
 #mpd.disconnected {

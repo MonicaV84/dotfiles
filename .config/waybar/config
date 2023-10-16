@@ -44,13 +44,13 @@
 "mpd": {
     "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
     "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon} Stopped ",
     "interval": 10,
     "consume-icons": {
         "on": " " // Icon shows only when "consume" is on
     },
     "random-icons": {
-        "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+        "off": "<span color=\"#f77698\"></span> ", // Icon grayed out when "random" is off
         "on": " "
     },
     "repeat-icons": {

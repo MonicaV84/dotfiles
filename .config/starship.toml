@@ -19,8 +19,3 @@ success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set
 [package]
 disabled = true
 
-# Hide nodes
-[nodejs]
-disabled = true
-[python]
-disabled = true

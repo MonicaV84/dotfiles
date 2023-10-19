@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Aliases
 
 alias ls='lsd --group-directories-first'
@@ -13,6 +20,8 @@ alias gp='git push'
 alias bare='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias hr='Hyprland'
 alias reload='source .zshrc'
+alias vi='nvim'
+alias rn='ranger'
 
 # Navigation
 alias ..='cd ..'
@@ -27,8 +36,8 @@ HELIX_RUNTIME=/.local/share/lib/helix/runtime
 
 #History
 export HISTFILE=~/.zsh_history
-export HISTFILESIZE=1000
-export HISTSIZE=1000
+export HISTFILESIZE=10000
+export HISTSIZE=10000
 
 
 # Path
@@ -43,11 +52,23 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
 
 # Zsh autosuggestions history
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+#ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
-# Neofetch
-neofetch
+# Navigation Keybinds
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
+bindkey "^[[3~" delete-char 
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
 
-# Starship Promp (Always place at the end of the file)
-eval "$(starship init zsh)"
+# Delete 
+function rmk(){
+	scrub -p dod $1
+	shred -zun 10 -v $1
+}
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

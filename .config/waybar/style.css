@@ -78,7 +78,7 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    color: #f77698;
 }
 
 #mode {
@@ -110,7 +110,6 @@ button:hover {
 #workspaces {
     font-family: HackNerdFont;
     font-size: 11px;
-    background-color: #24273a;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -227,7 +226,7 @@ label:focus {
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    color: #eb4d4b;
     border-radius: 0;
 }
 

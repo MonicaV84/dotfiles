@@ -88,11 +88,15 @@ function sudope -d "Quickly toggle sudo prefix"
     end
 end
 
+# Tide prompt configuration
+set -g tide_left_prompt_items os context cmd_duration git pwd status
+set -g tide_right_prompt_frame_enabled false
+set -g tide_right_prompt_prefix
+set -g tide_right_prompt_diff_color
+set -g tide_right_prompt_items
+
 #Neofetch
 neofetch
 
 # Path
 fish_add_path -g ~/.local/bin
-
-# Starship prompt
-starship init fish | source

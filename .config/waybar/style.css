@@ -236,14 +236,16 @@ label:focus {
 }
 
 
-/* #custom-audio_idle_inhibitor{
-    background-color: #24273a;
-    color: #fff0f5;
-} */
+ #custom-audio_idle_inhibitor{
+    background-color: transparent;
+    color: #ad8ee6;
+} 
 
 #idle_inhibitor.activated {
-    background-color: #fff0f5;
-    color: #24273a;
+    color: #ff9e64;
+}
+#idle_inhibitor.deactivated {
+    color: #1abc9c;
 }
 
 #mpd {

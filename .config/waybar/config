@@ -9,6 +9,7 @@
     ],
     "modules-center": ["mpd"],
     "modules-right": [
+        "idle_inhibitor",
         "custom/notification",
         "pulseaudio",
         "tray",
@@ -146,6 +147,14 @@
         "tooltip": false
        
 
+    },
+
+"idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
     }
+},
    
 }

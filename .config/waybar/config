@@ -4,6 +4,7 @@
     "spacing": 4, 
     "width": 1350,
     "modules-left": [
+        "custom/launcher",
         "hyprland/workspaces",
         "hyprland/window"
     ],
@@ -157,4 +158,8 @@
     }
 },
    
+  "custom/launcher": {
+      "format": "󰣇",
+      "on-click": "wofi --show=drun --allow-images"
+    }
 }

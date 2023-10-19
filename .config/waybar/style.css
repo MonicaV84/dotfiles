@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     background-color: #24273a;
     min-height: 0;
     border-radius: 20px;
@@ -319,4 +319,9 @@ label:focus {
         color: #7AA2F7;
     padding: 0 10px 0 10px;
 
+}
+#custom-launcher {
+  color: #7AA2F7;
+  border: none;
+  padding: 0 10px 0 10px;
 }

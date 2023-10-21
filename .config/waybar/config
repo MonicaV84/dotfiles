@@ -20,32 +20,23 @@
         "custom/pacman",
         "clock"
     ],
-    "hyprland/workspaces": {
+  "hyprland/workspaces": {
   "format": "{icon}",
   "on-click": "activate",
   "format-icons": {
     "1": "",
-    "2": "",
+    "2": "",
     "3": "",
     "4": "",
     "5": "",
     "6": "",
     "7": "",
     "urgent": "",
-    "active": "󰊠",
+    "active": "",
     "default": ""
   },
-    "persistent_workspaces": {
-    "1": "",
-    "2": "",
-    "3": "",
-    "4": "",
-    "5": "",
-    "6": "",
-    "7": "",
-    }
-},
-    
+  "sort-by-number": true
+},   
 "mpd": {
     "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
     "format-disconnected": "Disconnected ",
@@ -163,6 +154,6 @@
    
   "custom/launcher": {
       "format": "󰣇",
-      "on-click": "wofi --show=drun --allow-images"
+      "on-click": "rofi -show drun -show-icons"
     }
 }

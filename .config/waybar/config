@@ -110,6 +110,12 @@
         
         
     },
+    "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "",
+    "on-click": "helvum",
+    "format-icons": ["", "", ""]
+},
     "hyprland/window": {
         "format": "{title}",
         "max-length": 30,

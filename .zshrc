@@ -35,6 +35,7 @@ alias hr='Hyprland'
 alias reload='source .zshrc'
 alias vi='nvim'
 alias rn='ranger'
+alias sduo='sudo'
 
 # Navigation
 alias ..='cd ..'
@@ -119,5 +120,6 @@ spark() {
 # Starship
 eval "$(starship init zsh)"
 
+eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fastfetch

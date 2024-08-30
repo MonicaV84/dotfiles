@@ -36,6 +36,7 @@ alias reload='source .zshrc'
 alias vi='nvim'
 alias rn='ranger'
 alias sduo='sudo'
+alias pa='source env/bin/activate'
 
 # Navigation
 alias ..='cd ..'

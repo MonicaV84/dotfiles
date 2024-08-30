@@ -24,7 +24,7 @@
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-# font_size 11.0
+font_size 11.0
 
 #: Font size (in pts).
 
@@ -848,7 +848,7 @@ cursor_shape beam
 #: set the vertical and horizontal sides. Three values set top,
 #: horizontal and bottom. Four values set top, right, bottom and left.
 
-# window_padding_width 0
+window_padding_width 10
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border). A single value sets all four sides. Two values set
@@ -1158,7 +1158,7 @@ cursor_shape beam
 
 #: The foreground and background colors.
 
-# background_opacity 1.0
+ background_opacity 0.5
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -2527,3 +2527,9 @@ cursor_shape beam
 #: }}}
 
 #: }}}
+
+
+# BEGIN_KITTY_THEME
+# One Dark
+include current-theme.conf
+# END_KITTY_THEME

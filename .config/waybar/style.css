@@ -6,12 +6,12 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border: none;
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
-}
+    background-color: rgba(43, 48, 59, 0.7);
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid; 
+    border-radius: 15px;
+    }
 
 window#waybar.hidden {
     opacity: 0.2;

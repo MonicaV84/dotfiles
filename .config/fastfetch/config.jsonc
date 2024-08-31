@@ -30,6 +30,11 @@
             "key": "Backlight   ",
             "type": "brightness"
         },
+	{
+            "key": "uptime      ",
+            "type":"uptime"     
+	},
+		
         "break",
         {
             "type": "colors",

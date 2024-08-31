@@ -11,7 +11,7 @@ window#waybar {
     border-color: transparent;
     border-style: solid; 
     border-radius: 15px;
-    }
+}
 
 window#waybar.hidden {
     opacity: 0.2;

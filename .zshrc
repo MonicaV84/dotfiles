@@ -5,9 +5,12 @@ SAVEHIST=10000
 setopt autocd extendedglob nomatch notify
 unsetopt beep
 bindkey -e
+export EDITOR=vim
+export VISUAL=vim
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/moni/.zshrc'
+zstyle ':autocomplete:*' default-context history-incremental-search-backward
 
 autoload -Uz compinit
 compinit

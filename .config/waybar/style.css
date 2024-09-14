@@ -2,11 +2,11 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    margin: 0;
+    margin-top: 2px;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.7);
+    background-color: transparent;
     border-width: 1px;
     border-color: transparent;
     border-style: solid; 
@@ -25,6 +25,23 @@ window#waybar.solo {
     background-color: #FFFFFF;
 }
 */
+.modules-left {
+	background: rgba(43, 48, 59, 0.9);
+	border-radius: 20px;
+	padding: 0px 5px 5px 5px;
+}
+.modules-center {
+	background: rgba(43, 48, 59, 0.9);
+	border-radius: 20px;
+	padding: 0px 5px 0px 20px;
+	
+
+}
+.modules-right {
+	background: rgba(43, 48, 59, 0.9);
+	border-radius: 20px;
+	padding: 0px 5px 0px 5px;
+}
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -44,10 +61,10 @@ button {
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
+/*button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
-}
+    color: #ff5555;
+} */
 
 /* you can set a style on hover for any module like this */
 
@@ -319,10 +336,6 @@ label:focus {
 	}
 }
 
-#custom-updates {
-	margin-right: 4px;
-	padding-right: 6px;
-}
 #custom-updates.green {
     color: #50fa7b;
 }
@@ -335,7 +348,6 @@ label:focus {
     color: #ff5555;
 }
 #custom-notification {
-    margin-left: 9px;
     background: none;
     color: orange;
     

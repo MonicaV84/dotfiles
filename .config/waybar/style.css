@@ -27,19 +27,19 @@ window#waybar.solo {
 }
 */
 .modules-left {
-	background: @background;
+	background: @color1;
 	border-radius: 20px;
 	padding: 0px 5px 5px 5px;
 }
 .modules-center {
-	background: @background;
+	background: @color1;
 	border-radius: 20px;
 	padding: 0px 5px 0px 20px;
 	
 
 }
 .modules-right {
-	background: @background;
+	background: @color1;
 	border-radius: 20px;
 	padding: 0px 5px 0px 5px;
 }
@@ -72,7 +72,7 @@ button {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: @color12;
+    color: @color8;
 }
 
 #workspaces button.urgent {
@@ -80,7 +80,7 @@ button {
 }
 
 #workspaces button.active {
-    color: @color11;
+    color: @color2;
 }
 
 #workspaces button.empty {
@@ -128,7 +128,7 @@ button {
 }
 
 #clock {
-    color: @color11;
+    color: @color8;
     background: none;
 }
 
@@ -188,7 +188,7 @@ label:focus {
 }
 
 #memory {
-    color: @color14;
+    color: @color5;
     background: none;
 }
 
@@ -255,11 +255,11 @@ label:focus {
 }
 
 #idle_inhibitor {
-	color: @color3;
+	color: @color2;
 }
 
 #idle_inhibitor.activated {
-    color: @color3;
+    color: @color2;
 }
 
 #mpd {
@@ -350,13 +350,13 @@ label:focus {
 }
 #custom-notification {
     background: none;
-    color: @color6;
+    color: @color5;
     
 }
 
 #custom-notification.none {
     background: none;
-    color: @color9;
+    color: @color10;
 }
 
 #custom-notification.dnd-none,

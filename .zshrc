@@ -20,6 +20,7 @@ compinit
 
 # Path
 PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin
+export PATH=$PATH:/home/moni/.local/bin/
 
 
 # Aliases
@@ -126,4 +127,9 @@ eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Load pywal colors manually
+export WAL_COLOR=$(cat ~/.cache/wal/colors.json | jq -r '.colors.primary.base')
+export WAL_ACCENT=$(cat ~/.cache/wal/colors.json | jq -r '.colors.accent.base')
+# Apply the colors (this is just an example, adapt as needed)
+
 neofetch

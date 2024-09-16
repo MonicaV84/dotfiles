@@ -41,6 +41,7 @@ alias vi='nvim'
 alias rn='ranger'
 alias sduo='sudo'
 alias pa='source env/bin/activate'
+alias fb='fzf --preview "bat --style=numbers --color=always --line-range=:500 {}" --bind "enter:execute(sleep 0.1; nvim {})"'
 
 # Navigation
 alias ..='cd ..'

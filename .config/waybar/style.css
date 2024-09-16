@@ -27,19 +27,19 @@ window#waybar.solo {
 }
 */
 .modules-left {
-	background: @color1;
+	background: @background;
 	border-radius: 20px;
 	padding: 0px 5px 5px 5px;
 }
 .modules-center {
-	background: @color1;
+	background: @background;
 	border-radius: 20px;
 	padding: 0px 5px 0px 20px;
 	
 
 }
 .modules-right {
-	background: @color1;
+	background: @background;
 	border-radius: 20px;
 	padding: 0px 5px 0px 5px;
 }

@@ -1,6 +1,10 @@
 return {
 	{
-		"hrsh7th/cmp-nvim-lsp",
+		"hrsh7th/cmp-path",
+		-- You don't need to configure it separately, it can be included in nvim-cmp
+	},
+	{
+		"hrsh7th/cmp-nvim-lsp"
 	},
 	{
 		"L3MON4D3/LuaSnip",
@@ -14,6 +18,7 @@ return {
 		config = function()
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").lazy_load()
+
 			cmp.setup({
 				snippet = {
 					expand = function(args)
@@ -33,33 +38,13 @@ return {
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
-					--{ name = "luasnip" }, -- For vsnip users.
 					{ name = "luasnip" }, -- For luasnip users.
-					{ name = "path" }
-					-- { name = 'ultisnips' }, -- For ultisnips users.
-					-- { name = 'snippy' }, -- For snippy users.
+					{ name = "path" }, -- Add path here alongside other sources
 				}, {
 					{ name = "buffer" },
 				}),
-			})
-
-			cmp.setup.cmdline({ "/", "?" }, {
-				mapping = cmp.mapping.preset.cmdline(),
-				sources = {
-					{ name = "buffer" },
-					{ name = "path"},
-				},
-			})
-
-			cmp.setup.cmdline(":", {
-				mapping = cmp.mapping.preset.cmdline(),
-				sources = cmp.config.sources({
-					{ name = "path" },
-				}, {
-					{ name = "cmdline" },
-				}),
-				matching = { disallow_symbol_nonprefix_matching = false },
 			})
 		end,
 	},
 }
+

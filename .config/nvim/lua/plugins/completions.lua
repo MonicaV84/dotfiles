@@ -35,6 +35,7 @@ return {
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<CR>"] = cmp.mapping.confirm({ select = true }),
+					['<Tab>'] = cmp.mapping.select_next_item(),
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },

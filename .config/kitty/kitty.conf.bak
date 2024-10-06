@@ -1391,7 +1391,7 @@ window_padding_width 10
 #: See rc_custom_auth <https://sw.kovidgoyal.net/kitty/remote-
 #: control/#rc-custom-auth> for details.
 
-# allow_remote_control no
+allow_remote_control yes
 
 #: Allow other programs to control kitty. If you turn this on, other
 #: programs can control all aspects of kitty, including sending text
@@ -2527,9 +2527,11 @@ window_padding_width 10
 #: }}}
 
 #: }}}
+include ~/.cache/wal/colors-kitty.conf
+
 
 
 # BEGIN_KITTY_THEME
-# Pywal
-import = "~/.cache/wal/colors-kitty.conf"
+# Catppuccin-Macchiato
+include current-theme.conf
 # END_KITTY_THEME

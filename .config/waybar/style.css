@@ -1,4 +1,4 @@
-@import '../../.cache/wal/colors-waybar.css';
+@import '/home/moni/.config/waybar/colors/everforest.css';
 *{
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -72,19 +72,19 @@ button {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: @color8;
+    color: @color6;
 }
 
 #workspaces button.urgent {
-    color: @color9;
+    color: @color10;
 }
 
 #workspaces button.active {
-    color: @color2;
+    color: @color3;
 }
 
 #workspaces button.empty {
-    color: @color5;
+    color: @color2;
 }
 #mode {
     background-color: #64727D;
@@ -128,7 +128,7 @@ button {
 }
 
 #clock {
-    color: @color8;
+    color: @color14;
     background: none;
 }
 
@@ -210,7 +210,7 @@ label:focus {
 
 #pulseaudio {
 
-    color: @color8;
+    color: @color6;
 }
 
 #pulseaudio.muted {
@@ -255,11 +255,11 @@ label:focus {
 }
 
 #idle_inhibitor {
-	color: @color2;
+	color: @color11;
 }
 
 #idle_inhibitor.activated {
-    color: @color2;
+    color: @color11;
 }
 
 #mpd {
@@ -338,7 +338,7 @@ label:focus {
 }
 
 #custom-updates.green {
-    color: @color2;
+    color: @color4;
 }
 
 #custom-updates.yellow {
@@ -350,7 +350,7 @@ label:focus {
 }
 #custom-notification {
     background: none;
-    color: @color5;
+    color: @color13;
     
 }
 

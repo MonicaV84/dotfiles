@@ -133,6 +133,5 @@ export WAL_COLOR=$(cat ~/.cache/wal/colors.json | jq -r '.colors.primary.base')
 export WAL_ACCENT=$(cat ~/.cache/wal/colors.json | jq -r '.colors.accent.base')
 # Apply the colors (this is just an example, adapt as needed)
 
-neofetch
-
+nitch
 alias luamake="/home/moni/lua-language-server/3rd/luamake/luamake"

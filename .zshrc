@@ -11,6 +11,7 @@ export VISUAL=nvim
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/moni/.zshrc'
 zstyle ':autocomplete:*' default-context history-incremental-search-backward
+zstyle ':autocomplete:*' min-input 3
 
 autoload -Uz compinit
 compinit
@@ -28,6 +29,7 @@ alias ls='lsd --group-directories-first'
 alias la='lsd -a --group-directories-first'
 alias lsa='lsd -la --group-directories-first'
 alias sl='sl | lolcat'
+alias cd='z'
 alias cat='bat'
 alias chth='kitty +kitten themes'
 alias gs='git status'
@@ -58,6 +60,7 @@ alias c='clear; echo; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo;
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
+source /home/moni/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Functions
 spark() {

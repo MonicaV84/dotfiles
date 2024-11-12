@@ -1,0 +1,21 @@
+@define-color foreground #abb2bf;
+@define-color background #282c34;
+@define-color cursor #528bff;
+
+@define-color color0 #282c34;  /* base background */
+@define-color color1 #e06c75;  /* pink */
+@define-color color2 #d19a66;  /* peach (orange) */
+@define-color color3 #e5c07b;  /* yellow */
+@define-color color4 #98c379;  /* green */
+@define-color color5 #56b6c2;  /* teal (cyan) */
+@define-color color6 #61afef;  /* blue */
+@define-color color7 #abb2bf;  /* lavender (light gray) */
+@define-color color8 #5c6370;  /* gray */
+@define-color color9 #d19a66;  /* light gray (orange) */
+@define-color color10 #c678dd; /* purple */
+@define-color color11 #e06c75; /* rose */
+@define-color color12 #56b6c2; /* aqua (cyan) */
+@define-color color13 #61afef; /* periwinkle (blue) */
+@define-color color14 #e5c07b; /* cream (yellow) */
+@define-color color15 #ffffff; /* soft white */
+

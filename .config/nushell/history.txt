@@ -1,0 +1,229 @@
+ls
+ls -a
+ls
+ls where type == File
+ls | where type == Filr
+ls | where type == File
+chsh -l
+sudo pacman -Syu
+cd Hypr
+cd .config/
+cd hypr/
+ls
+cd
+chsh -
+chsh -l
+chsh -s /bin/nu
+echo $SHELL
+echo $env.SHELL
+ls
+sl
+ls
+cd
+ls -a
+ls -a ~ | where type == File
+ls -a ~ | where type ==  file
+lsd
+ps
+sys
+sys -h
+ls
+ls -a
+cd .config/
+ls
+cd nushell/
+ls
+nvim config.nu
+cd
+ls
+clear
+cd
+cd .config/n
+cd .config/
+ls
+exit
+cd
+nupass 100 -v diceware -t 12
+let password_length = 12<\n>let chars = "!@#$%^&*()"<\n>let numbers = "0123456789"<\n><\n>let password = (<\n>  repeat password_length (<\n>    random choice chars | random choice numbers<\n>  ) | str join ""<\n>)<\n>echo $password
+zsh
+openssl rand -base64 12
+pacman -Syu
+sys
+system
+sys
+sys emm
+sys mem
+sys hsot
+sys host
+nvim .zshrc
+cd .config/
+ls
+cd nushell/
+ls
+nvim config.nu
+cd .config/nushell/
+vi config.nu
+nvim config.nu
+cd .config/nushell/
+nvim config.nu
+cd .config/nushell/
+nvim config.nu
+cd .config/nushell/
+nvim config.nu
+l
+la
+lsa
+touch text.txt
+l
+rm text.txt
+ls
+l
+sl
+pacman -Syu
+sudo pacman -S calcurse
+calcurse
+ls
+la
+NetworkManager
+whereis NetworkManager
+sudo systemctl enable NetworkManager.service
+sudo systemctl start NetworkManager.service
+cd .config/waybar/
+ls
+vi config.jsonc
+nvim config.jsonc
+nvim
+cd
+systemctl status NetworkManager.service
+$env.PATH
+cd .config/nushell/
+ls
+nvim env.nu
+$env.EDITOR
+$end.EDITOR
+$env.EDITOR
+cd .config/nushell/
+vi config.nu
+cd .config/nushell/
+vi config.nu
+nvim config.nu
+config reload
+cd .config/nushell/
+nvim config.nu
+chsh -s /bin/zsh
+cd .config/nushell/
+nvim config.nu
+cd .config/nushell/
+nvim env.nu
+echo $env.EDITOR
+chsh -s /bin/nu
+usermod --shell /bin/nu moni
+echo $env.SHELL
+sudo pacman -S libreoffice-fresh
+killall swaync
+swaync
+sudo pacman -S nm-applet
+sudo pacman -S networl-manager-applet
+sudo pacman -S network-manager-applet
+usermod --shell /bin/zsh moni
+sduo usermod --shell /bin/zsh moni
+cd .config/hypr/
+vi hyprland.conf
+cd
+cd .config/nushell/
+ls
+vi config.nu
+cd
+config nu
+bare status
+config nu
+bare status
+config nu
+config nu 
+bare status
+la
+lsa
+ls
+bare add ~/.config/nu
+bare status
+bare add .config/nu
+config nu 
+bare add .config/nu
+bare status
+config nu 
+vi .zshrc
+nvim .zshrc
+config nu 
+bare status
+config nu 
+nvim .zshrc
+config nu 
+bare status
+bare add .config/nu
+config nu 
+nvim .zshrc
+config nu 
+bare add .config/nu
+config nu 
+bare status
+cd dotfiles/
+ls
+cd
+ls
+cd dotfiles/
+ls
+cd
+config nu 
+bare status
+config nu 
+git --git-dir=$env.HOME/dotfiles config core.bare true<\n>
+bare status
+cd dotfiles/
+git --git-dir=$env.HOME/dotfiles config core.bare true<\n>
+GIT_DIR=$HOME/dotfiles GIT_WORK_TREE=$HOME /usr/bin/git status<\n>
+cd
+GIT_DIR=$HOME/dotfiles GIT_WORK_TREE=$HOME /usr/bin/git status<\n>
+config nu 
+bare status
+config nu 
+bare status
+/usr/bin/git --git-dir=^$env.HOME/dotfiles --work-tree=^$env.HOME status<\n>
+config nu 
+bare status
+config nu 
+bare status
+echo $env.HOME/dotfiles<\n>
+get env | where name == 'HOME'<\n>
+config nu 
+bare status
+config nu 
+ls
+config nu 
+vi .zshrc
+config nu 
+bare status
+config nu 
+bare status
+config nu 
+bare status
+config nu 
+bare status
+/usr/bin/git --git-dir=$($env.HOME)/dotfiles rev-parse --is-bare-repository<\n>
+git init --bare $env.HOME/dotfiles
+git init --bare $HOME/dotfiles
+zsh
+git init --bare $env.HOME/dotfiles
+ls
+/usr/bin/git --git-dir=$($env.HOME)/dotfiles rev-parse --is-bare-repository<\n>
+cd dotfiles/
+git init --bare
+bare status
+config nu 
+bare status
+config nu 
+bare status
+config nu 
+bare status
+bare add .config/nu
+bare add ~/.config/nu
+ls .config/

@@ -227,3 +227,125 @@ bare status
 bare add .config/nu
 bare add ~/.config/nu
 ls .config/
+bare add ~/.config/nushell
+bare status
+bare add ~/.config/hypr/
+bare status
+bare commit -m "Fixing hyprland errors after update and adding nushell config"
+bare push
+clear
+c
+ls
+la
+lsa
+cd
+cd .config/
+ls
+la
+ls
+la
+lsa
+cd
+clear
+vi .config/starship.toml
+config nu 
+ls
+config nu 
+vi .config/nushell/env.nu
+config nu 
+ls
+vi .config/starship.toml
+..
+cd
+clea
+clear
+sudo pacman -Syu
+ls
+cd
+clear
+killall swaync
+clear
+sudo pacman -S notesnook
+sudo pacman -Rns notesnook
+sudo pacman -R notesnook
+sudo pacman -R notesnook-bin
+sudo pacman -Rns notesnook-bin
+sudo pacman -S macchina
+macchina
+machinna --list -themes
+macchina --list -themes
+macchina --list-themes
+macchina --theme Beryllium
+macchina --theme Hellium
+macchina --theme Hydrogen
+macchina --theme Lithium
+cd .config
+ls
+cd /usr/share/
+LS
+ls
+cd macchina/
+ls
+cd themes/
+ls
+cd
+cd .config/
+mkdir macchina
+cd macchina/
+touch macchina.toml
+macchina --list-themes
+vi macchina.toml
+machina
+macchina
+vi macchina.toml
+macchina
+vi macchina.toml
+macchina
+vi macchina.toml
+macchina
+vi macchina.toml
+macchina
+vi macchina.toml
+macchina
+vi macchina.toml
+macchina
+cd
+clear
+macchina
+clear
+cd .config/nushell/
+ls
+vi config.nu
+cal
+ls
+lsa
+la
+clear
+starship preset gruvbox-rainbow -o ~/.config/starship.toml
+ls
+cd .config/
+cd nushell/
+clear
+cd
+clear
+cd dotfiles/
+cd
+clear
+cd .config/
+ls
+vi starship.toml
+cd
+cd /etc
+cd
+cd .config/
+vi starship.toml
+cd
+clear
+bare add ~/.config/starship.toml
+bare commit -m "Adding Starship prompt config"
+bare push
+bare add ~/.config/nvim/
+bare status
+bare commit -m "Adding Neovim config"
+bare push
+bare status

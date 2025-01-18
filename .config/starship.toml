@@ -150,3 +150,8 @@ symbol = "ﯣ "
 format = "via [ Node.js $version](bold green) "
 detect_files = ["package.json", ".node-version"]
 detect_folders = ["node_modules"]
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = '[ ♥ $time ]($style)'

@@ -349,3 +349,117 @@ bare status
 bare commit -m "Adding Neovim config"
 bare push
 bare status
+bare add ~/.config/nushell/
+bare commit -m "Updating nushell config"
+bare push
+53/12
+calc 53/12
+cal 53/12
+math 53/12
+python 53/12
+python
+clear
+cal
+la
+curl -fsSL https://bun.sh/install | bash && \<\n>  sudo ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
+curl -fsSL https://bun.sh/install | bash and \<\n>  sudo ln -s $env.HOME/.bun/bin/bun /usr/local/bin/bun
+bash
+hyprpanel
+ags
+bash
+sudo pacman -S libgtop bluez bluez-utils btop dart-sass  brightnessctl swww gnome-bluetooth-3.0 pacman-contrib power-profiles-daemon gvfs
+whereis pipewire
+ls
+sudo pacman -S aylurs-gtk-shell
+bash
+killall waybar
+ags
+cd .config/ags
+./make_agsv1.sh
+ags
+cd
+ags
+agsv1
+killall waybar
+agsv1
+waybar and disown
+waybar & disown
+waybar && disown
+waybar and disown
+cd .config/hypr/
+vi hyprland.conf
+cd .config/ags/assets/
+ls
+..
+ls
+vi config.js
+vi
+cd .config/ags/
+ls
+vi config.js
+ls
+./fillThemes.sh
+sudo pacman -S jq
+./fillThemes.sh
+killall swaync
+cd
+cd .config/hypr/
+ls
+vi hyprland.conf
+cd scripts/
+ls
+cd
+cd .config/waybar/
+ls
+cd
+sudo pacman -R swaync
+cd .config/hypr
+ls
+vi hyprland.conf
+cd
+sudo pacman -S swaync
+vi
+btop
+sudo pacman -S neofetch
+cd ~/.config/neofetch/ && rename config.conf configbackup.conf config.conf
+cd ~/.config/neofetch/ and rename config.conf configbackup.conf config.conf
+cd ~/.config/neofetch/ ; rename config.conf configbackup.conf config.conf
+neofetch
+vi .config/neofetch/config.conf
+neofetch
+cd .config/neofetch/
+ls
+cd neofetch-themes/
+ls
+cd normal/
+ls
+..
+cd small/
+ls
+.
+..
+ls
+cd normal/
+ls
+cp idlifetch.conf ~/.config/neofetch/config.conf
+cd
+cd .config/neofetch/
+ls
+neofetch
+..
+ls
+cd nushell/
+ls
+vi config.nu
+clear
+pacman -Syu
+sudo pacman -Syu
+sudo chsh /bin/zsh
+chsh -s /bin/zsh
+lsa
+la
+clear
+cmatriz
+ls
+la
+lsa

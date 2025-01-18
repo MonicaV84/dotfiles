@@ -908,6 +908,5 @@ alias sduo = sudo
 alias .. = cd ..
 alias bare = /usr/bin/git --git-dir=($env.HOME)/dotfiles --work-tree=($env.HOME)
 
-macchina
 
 use ~/.cache/starship/init.nu

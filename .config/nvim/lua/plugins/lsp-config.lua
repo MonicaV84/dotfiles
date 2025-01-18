@@ -18,8 +18,17 @@ return {
     lazy = false,
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
       local lspconfig = require("lspconfig")
+      local mason_lspconfig = require("mason-lspconfig")
+      -- Specify a default handler for all Mason-supported servers
+      mason_lspconfig.setup_handlers({
+        function(server_name)
+          lspconfig[server_name].setup({
+            capabilities = capabilities,
+          })
+        end,
+      })
+
       lspconfig.tailwindcss.setup({
         capabilities = capabilities
       })

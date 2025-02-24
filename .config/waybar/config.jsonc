@@ -3,7 +3,7 @@
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 22, // Waybar height (to be removed for auto height)
-    "width": 1350, // Waybar width
+    // "width": 1350, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
@@ -13,9 +13,6 @@
         "custom/media"
     ],
     "modules-center": [
-         "custom/updates",
-	 "custom/notification",
-	 "keyboard-state"
     ],
     "modules-right": [
         "idle_inhibitor",
@@ -25,7 +22,10 @@
         "temperature",
         "backlight",
         "clock",
-        "tray"
+        "custom/updates",
+	"keyboard-state",
+        "tray",
+	"custom/notification"
     ],
     // Modules configuration
      "hyprland/workspaces": {

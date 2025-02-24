@@ -43,6 +43,9 @@ alias rn='ranger'
 alias sduo='sudo'
 alias pa='source env/bin/activate'
 alias fb='fzf --preview "bat --style=numbers --color=always --line-range=:500 {}" --bind "enter:execute(sleep 0.1; nvim {})"'
+alias rb='sudo reboot now'
+alias pq='pacman -Q | wc -l' 
+alias se='sudoedit'
 
 # Navigation
 alias ..='cd ..'
@@ -54,11 +57,10 @@ alias .5='cd ../../../../..'
 # DT's clear
 alias c='clear; echo; echo; seq 1 $(tput cols) | sort -R | spark | lolcat; echo; echo'
 
-
 # Plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
+source /home/moni/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/moni/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/moni/.zsh/zsh-sudo-plugin/sudo.plugin.zsh
 
 # Functions
 spark() {
@@ -129,9 +131,13 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   exec tmux
 fi
 
+# DT's colorscript
+bash ~/color-scripts/color-scripts.sh
 # Starship
 eval "$(starship init zsh)"
 
 eval "$(zoxide init --cmd cd zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-nitch
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)

@@ -1,7 +1,7 @@
 return {
-	 "neanias/everforest-nvim",
+	"folke/tokyonight.nvim",
 	priority = 1000 ,
 	config = function()
-	    vim.cmd.colorscheme "everforest"
-	end
+	    vim.cmd[[colorscheme tokyonight-storm]]
+	end,
 }

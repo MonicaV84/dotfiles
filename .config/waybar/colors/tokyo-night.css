@@ -1,0 +1,21 @@
+@define-color foreground #a9b1d6;  /* Text */
+@define-color background #1f2335;  /* Background */
+@define-color cursor #7aa2f7;  /* Cursor */
+
+@define-color color0 #1f2335;  /* base background */
+@define-color color1 #ff757f;  /* pink */
+@define-color color2 #c3e88d;  /* green */
+@define-color color3 #ff9e64;  /* orange */
+@define-color color4 #41a6b5;  /* cyan */
+@define-color color5 #7dcfff;  /* light cyan */
+@define-color color6 #b4f9f8;  /* soft cyan */
+@define-color color7 #a9b1d6;  /* light gray */
+@define-color color8 #24283b;  /* dark gray */
+@define-color color9 #ffc777;  /* yellow */
+@define-color color10 #3d59a1; /* blue */
+@define-color color11 #394b70; /* deep blue */
+@define-color color12 #7aa2f7; /* blue (distinct) */
+@define-color color13 #9d7cd8; /* purple */
+@define-color color14 #f59e00; /* golden orange (distinct) */
+@define-color color15 #ffffff; /* white */
+

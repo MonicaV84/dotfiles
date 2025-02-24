@@ -1,0 +1,201 @@
+/* Molokai-inspired Waybar CSS */
+
+@define-color foreground #f8f8f2;
+@define-color background #1b1d1e;
+@define-color cursor #ae81ff;
+
+@define-color color0 #1b1d1e;  /* base background */
+@define-color color1 #f92672;  /* urgent red */
+@define-color color2 #fd971f;  /* orange */
+@define-color color3 #e6db74;  /* yellow */
+@define-color color4 #a6e22e;  /* green */
+@define-color color5 #66d9ef;  /* cyan */
+@define-color color6 #7587a6;  /* blue */
+@define-color color7 #f8f8f2;  /* light gray */
+@define-color color8 #75715e;  /* gray */
+@define-color color9 #ae81ff;  /* purple */
+@define-color color10 #fd5ff0; /* vibrant pink */
+@define-color color11 #8be9fd; /* light cyan */
+@define-color color12 #50fa7b; /* neon green */
+@define-color color13 #ffb86c; /* peach */
+@define-color color14 #bd93f9; /* lavender */
+@define-color color15 #ffffff; /* white */
+
+/* Base Styles */
+* {
+    border: none;
+    border-radius: 4px;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 12px;
+    padding: 1px 4px;
+    color: @foreground;
+}
+
+window#waybar {
+    background-color: @background;
+    border-bottom: 1px solid @color8;
+    padding: 4px 4px;
+    margin-top: 4px;
+}
+
+/* Left Modules */
+#workspaces button {
+    background-color: @color0;
+    color: @color7;
+    margin: 1px;
+    padding: 1px 4px;
+    border: 1px solid @color8;
+    transition: background-color 0.3s ease;
+}
+#workspaces button.active {
+    background-color: @color9;
+    color: @color15;
+    border-color: @color1;
+}
+#workspaces button:hover {
+    background-color: @color13;
+    color: @color15;
+}
+
+#mode {
+    background-color: @color5;
+    color: @color0;
+    border: 1px solid @color14;
+}
+
+#scratchpad {
+    background-color: @color4;
+    color: @color0;
+    border: 1px solid @color3;
+}
+
+#custom-media {
+    background-color: @color12;
+    color: @color0;
+    border: 1px solid @color6;
+}
+
+/* Center Modules */
+#custom-notification, #keyboard-state {
+    background-color: @color10;
+    color: @color0;
+    margin: 1px;
+    padding: 1px 6px;
+    border: 1px solid @color2;
+}
+
+#custom-updates.green {
+    background-color: @color4;
+    color: @color0;
+    margin: 1px;
+    padding: 1px 6px;
+    border: 1px solid @color6;
+}
+
+#custom-updates.yellow {
+    background-color: @color3;
+    color: @color0;
+    margin: 1px;
+    padding: 1px 6px;
+    border: 1px solid @color5;
+}
+
+#custom-updates.red {
+    background-color: @color1;
+    color: @color15;
+    margin: 1px;
+    padding: 1px 6px;
+    border: 1px solid @color9;
+}
+
+/* Right Modules */
+#idle_inhibitor {
+    background-color: @color11;
+    color: @color0;
+    border: 1px solid @color9;
+}
+
+#pulseaudio {
+    background-color: @color2;
+    color: @color0;
+    border: 1px solid @color6;
+}
+
+#cpu {
+    background-color: @color14;
+    color: @color0;
+    border: 1px solid @color4;
+}
+
+#memory {
+    background-color: @color13;
+    color: @color0;
+    border: 1px solid @color9;
+}
+
+#temperature {
+    background-color: @color5;
+    color: @color0;
+    border: 1px solid @color3;
+}
+
+#backlight {
+    background-color: @color6;
+    color: @color0;
+    border: 1px solid @color12;
+}
+
+#clock {
+    background-color: @color9;
+    color: @color0;
+    border: 1px solid @color3;
+    font-weight: bold;
+}
+
+#tray {
+    background-color: @color8;
+    color: @color15;
+    border: 1px solid @color11;
+}
+
+#battery {
+    background-color: @color12;
+    color: @color0;
+    border: 1px solid @color4;
+}
+
+#network {
+    background-color: @color10;
+    color: @color0;
+    border: 1px solid @color13;
+}
+
+/* Hover Effects */
+#idle_inhibitor:hover, #pulseaudio:hover, #cpu:hover, #memory:hover, #temperature:hover, #backlight:hover, #clock:hover, #tray:hover, #battery:hover, #network:hover {
+    background-color: @color10;
+    color: @color15;
+}
+
+/* Urgent Style */
+.urgent {
+    background-color: @color1;
+    color: @color15;
+}
+
+/* Spacing */
+.modules-left, .modules-center, .modules-right {
+    margin: 1px 2px;
+}
+
+/* Launcher Button */
+#custom-launcher {
+    background-color: @color11;
+    color: @color0;
+    padding: 2px;
+    border: 1px solid @color5;
+}
+#custom-launcher:hover {
+    background-color: @color10;
+    color: @color15;
+}
+

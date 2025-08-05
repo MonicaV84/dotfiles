@@ -1,0 +1,9 @@
+configuration {
+  show-icons: true;
+}
+
+element-icon {
+  size: 48px;
+  padding: 4px;
+}
+

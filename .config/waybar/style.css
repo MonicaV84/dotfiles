@@ -1,0 +1,130 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin-top:2px;
+}
+
+window#waybar {
+    background-color: transparent;
+   /* border-bottom: 3px solid rgba(100, 114, 125, 0.5);*/
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 7px;
+    opacity: 0.9;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    /* Avoid rounded borders under each button name */
+    border: none;
+    padding: 0;
+    
+}
+
+    
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+    background-color: transparent;
+}
+
+#workspaces button {
+    
+    margin-left: 0;
+    color: @foreground;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+    border:1px solid @color5;
+    border-radius:7px;
+    min-width:25px;
+    color:@color5; 
+}
+
+#workspaces button.urgent {
+    color: @color11;
+}
+
+#workspaces button.empty {
+    color: @color8;
+}
+
+#custom-info-wrap,
+#keyboard-state,
+#custom-hardware-wrap,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+    padding: 0 10px;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left {
+    border-radius:6px;
+    background: @background;
+    margin-left: 0;
+    color: @foreground;
+}
+
+.modules-center {
+	border-radius:6px;
+	background: @background;
+	margin-left: 0;
+	padding-bottom:3px;
+}
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right {
+    border-radius:6px;
+    margin-right: 0;
+    background: @background;
+    color: @foreground;
+}
+
+#custom-info-wrap,
+#custom-hardware-wrap
+#cpu,
+#memory,
+#temperature,
+#custom-weather,
+#idle_inhibitor,
+#keyboard-state {
+	padding-top:0px;
+	padding-bottom: 0px;
+}
+
+
+
+

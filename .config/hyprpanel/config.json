@@ -24,7 +24,7 @@
   "bar.windowtitle.class_name": true,
   "bar.windowtitle.truncation_size": 50,
   "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
-  "bar.customModules.updates.extendedTooltip": false,
+  "bar.customModules.updates.extendedTooltip": true,
   "theme.bar.buttons.modules.weather.enableBorder": false,
   "bar.customModules.weather.unit": "imperial",
   "theme.bar.buttons.modules.hypridle.enableBorder": false,
@@ -484,5 +484,6 @@
   "menus.dashboard.powermenu.avatar.image": "/run/media/moni/decb5823-5486-49ad-8b1e-5689b32e63e3/owl.svg",
   "theme.bar.menus.menu.dashboard.profile.size": "8.5em",
   "bar.network.label": true,
-  "bar.customModules.hypridle.onIcon": ""
+  "bar.customModules.hypridle.onIcon": "",
+  "bar.customModules.updates.leftClick": "kitty -e /usr/share/hyprpanel/scripts/runUpdates.sh -arch"
 }

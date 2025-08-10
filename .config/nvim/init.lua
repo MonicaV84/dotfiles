@@ -8,76 +8,131 @@ vim.o.swapfile = false
 vim.o.clipboard = 'unnamedplus'
 vim.g.mapleader = " "
 
+
 -- NOTE: Keymaps
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<leader>q', ':quit<CR>')
+vim.keymap.set('n', '<leader>r', ':restart<CR>')
+vim.keymap.set('n', '<leader>l', ':wq<CR>')
 vim.keymap.set('n', '<leader>ff', ':FzfLua files<CR>')
 vim.keymap.set('n', '<leader>fb', ':FzfLua buffers<CR>')
 vim.keymap.set('n', '<leader>c', ':bw<CR>')
-vim.keymap.set('n', '-', ':Oil<CR>')
+vim.keymap.set('n', '<leader>n', ':bNext<CR>')
+vim.keymap.set('n', '<leader>a', ':NvimTreeToggle<CR>')
 
--- NOTE: Plugins
-vim.pack.add({
-	{ src = 'https://github.com/nvim-tree/nvim-web-devicons' },
-	{ src = 'https://github.com/echasnovski/mini.nvim' },
-	{ src = 'https://github.com/nvim-lualine/lualine.nvim' },
-	{ src = 'https://github.com/echasnovski/mini.pairs' },
-	{ src = 'https://github.com/echasnovski/mini.surround' },
-	{ src = 'https://github.com/echasnovski/catppuccin-nvim' },
-	{ src = 'https://github.com/echasnovski/mini.ai' },
-	{ src = 'https://github.com/neovim/nvim-lspconfig' },
-	{ src = 'https://github.com/echasnovski/mini.snippets' },
-	{ src = 'https://github.com/Saghen/blink.cmp' },
-	{ src = 'https://github.com/ibhagwan/fzf-lua' },
-	{ src = 'https://github.com/mason-org/mason.nvim' },
-	{ src = 'https://github.com/nvim-lua/plenary.nvim' },
-	{ src = 'https://github.com/folke/todo-comments.nvim' },
-	{ src = 'https://github.com/stevearc/oil.nvim' },
-	{ src = 'https://github.com/folke/which-key.nvim' },
+
+-- NOTE: Lazy.Nvim
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+	local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+	if vim.v.shell_error ~= 0 then
+		vim.api.nvim_echo({
+			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+			{ out,                            "WarningMsg" },
+			{ "\nPress any key to exit..." },
+		}, true, {})
+		vim.fn.getchar()
+		os.exit(1)
+	end
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("lazy").setup({
+	spec = {
+		{ "catppuccin/nvim" },
+		{ 'echasnovski/mini.nvim' },
+		{ "ibhagwan/fzf-lua" },
+		{ "mason-org/mason.nvim" },
+		{ "mason-org/mason-lspconfig.nvim" },
+		{ 'neovim/nvim-lspconfig' },
+		{ 'nvim-lualine/lualine.nvim' },
+		{ "folke/todo-comments.nvim" },
+		{ "nvim-lua/plenary.nvim" },
+		{ "nvim-tree/nvim-tree.lua" },
+		{ 'hrsh7th/cmp-nvim-lsp' },
+		{ 'hrsh7th/cmp-buffer' },
+		{ 'hrsh7th/cmp-path' },
+		{ 'hrsh7th/cmp-cmdline' },
+		{ 'hrsh7th/nvim-cmp' },
+		{'abeldekat/cmp-mini-snippets'},
+		{ "lewis6991/gitsigns.nvim" },
+    { "lukas-reineke/indent-blankline.nvim" },
+    { "folke/which-key.nvim" },
+	},
+	-- Configure any other settings here. See the documentation for more details.
+	-- automatically check for plugin updates
+	checker = { enabled = true },
 })
-
-require('nvim-web-devicons').setup()
-require('lualine').setup()
+vim.cmd.colorscheme "catppuccin-macchiato"
 require('mini.pairs').setup()
 require('mini.ai').setup()
-require('catppuccin').setup()
-require('oil').setup()
 require('mini.surround').setup()
 require('mini.snippets').setup()
-require('which-key').setup()
-require('blink.cmp').setup({
-	keymap = {
-		preset = 'default',
-		['<CR>'] = { 'accept', 'fallback' },
-		['<Tab>'] = { 'select_next', 'fallback' },
-		['<S-Tab>'] = { 'select_prev', 'fallback' },
-		sources = {
-			providers = {
-				path = {
-					opts = {
-						show_hidden_files_by_default = true,
-					},
-				},
-			},
-		},
-	},
-})
+require('mini.icons').setup()
+require('mini.notify').setup()
 require('fzf-lua').setup()
-require('mason').setup()
-require('todo-comments').setup()
-
-vim.cmd.colorscheme "catppuccin-macchiato"
-vim.lsp.enable({ 'lua_ls', 'pyright', 'bashls', 'cssls', 'html', 'jsonsl' })
-
--- NOTE: LSP Configurations
-vim.lsp.config('lua_ls', {
+require("mason").setup()
+require('mason-lspconfig').setup({
+	ensure_installed = { 'lua_ls', 'pyright', 'cssls', 'bashls', 'jsonls' }
+})
+vim.lsp.enable('...')
+vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
 			diagnostics = {
-				globals = { 'vim' }, -- Recognize 'vim' as a global variable
+				globals = { "vim" },
 			},
 		},
 	},
 })
+require('lualine').setup()
+require('todo-comments').setup()
+require('nvim-tree').setup()
+local cmp = require('cmp')
+
+cmp.setup({
+  snippet = {
+    expand = function(args)
+      require('mini.snippets').expand_snippet(args.body)
+    end,
+  },
+  mapping = cmp.mapping.preset.insert({
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<Tab>'] = cmp.mapping.select_next_item(),
+    ['<S-Tab>'] = cmp.mapping.select_prev_item(),
+  }),
+  sources = {
+    { name = 'path' },
+    { name = 'nvim_lsp' },
+    { name = 'buffer' },
+    { name = 'mini' },
+  },
+  window = {
+    completion = cmp.config.window.bordered({
+      border = 'rounded',
+    }),
+    documentation = cmp.config.window.bordered({
+      border = 'rounded',
+    }),
+  },
+})
+-- gitsigns
+require('gitsigns').setup({
+  signs = {
+    add          = { text = '+' },
+    change       = { text = '~' },
+    delete       = { text = '_' },
+    topdelete    = { text = '‾' },
+    changedelete = { text = '~' },
+  },
+  current_line_blame = true,  -- show git blame info on current line
+})
+
+-- indent-blankline
+require("ibl").setup()
+-- which-key
+require("which-key").setup()

@@ -28,10 +28,11 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_
 export PATH=$PATH:/home/moni/.local/bin/
 export PATH=$PATH:/usr/lib/qt6/bin
 export PATH=$PATH:/usr/lib/python3.13/site-packages/pywalfox/bin
+export PATH=$PATH:/home/moni/.cargo/bin
 
 
-
-# Aliases
+ #Aliases
+ #rt 
 alias ls='lsd --group-directories-first'
 alias la='lsd -a --group-directories-first'
 alias lsa='lsd -la --group-directories-first'

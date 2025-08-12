@@ -1,0 +1,15 @@
+
+-- NOTE: Keymaps
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
+vim.keymap.set('n', '<leader>w', ':write<CR>')
+vim.keymap.set('n', '<leader>q', ':quit<CR>')
+vim.keymap.set('n', '<leader>ff', ':FzfLua files<CR>')
+vim.keymap.set('n', '<leader>fb', ':FzfLua buffers<CR>')
+vim.keymap.set('n', '<leader>lg', ':FzfLua live_grep<CR>')
+vim.keymap.set('n', '<leader>c', ':bw<CR>')
+vim.keymap.set('n', '<leader>n', ':bNext<CR>')
+vim.keymap.set('n', '<leader>a', ':NvimTreeToggle<CR>')
+vim.keymap.set('n', '<leader>m', ':Mason<CR>')
+vim.keymap.set('n', '<leader>la', ':Lazy<CR>')
